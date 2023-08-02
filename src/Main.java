@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static int[] generateRandomArray(int lenght) {
@@ -29,8 +30,13 @@ public class Main {
         return result;
     }
 
+    public static double averageOfArray(int[] array, int daysPerMounth) {
+        double result = 0.0;
+        return result = sumOfArray(array) / daysPerMounth;
+    }
+
     static void task1() {
-        System.out.printf("\nЗадание %d:\n", counter++);
+        System.out.printf("\nЗадание %d:", counter++);
 
         int[] book = generateRandomArray(30);
 
@@ -50,6 +56,14 @@ public class Main {
         }
 
         System.out.printf("\nМинимальная сумма трат за день составила %d рублей."
-               + "Максимальная сумма трат за день составила %d рублей\n", minCost, maxCost);
+                + "Максимальная сумма трат за день составила %d рублей\n", minCost, maxCost);
+    }
+
+    static void task3() {
+        System.out.printf("\nЗадание %d:", counter++);
+
+        int[] book = generateRandomArray(30);
+
+        System.out.printf("\nСредняя сумма трат за месяц составила %f рублей\n", averageOfArray(book, 30));
     }
 }
