@@ -32,7 +32,7 @@ public class Main {
     }
 
     public static double averageOfArray(int[] array, int daysPerMounth) {
-        return (double)sumOfArray(array) / daysPerMounth;
+        return (double) sumOfArray(array) / daysPerMounth;
     }
 
     static void task1() {
@@ -70,10 +70,10 @@ public class Main {
     static void task4() {
         System.out.printf("\nЗадание %d:", counter++);
 
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
 
         System.out.println();
-        for (int i = reverseFullName.length-1; i >= 0; i--) {
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
         }
     }
