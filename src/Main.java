@@ -8,6 +8,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static int[] generateRandomArray(int lenght) {
@@ -64,5 +65,16 @@ public class Main {
         int[] book = generateRandomArray(30);
 
         System.out.printf("\nСредняя сумма трат за месяц составила %f рублей\n", averageOfArray(book, 30));
+    }
+
+    static void task4() {
+        System.out.printf("\nЗадание %d:", counter++);
+
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+
+        System.out.println();
+        for (int i = reverseFullName.length-1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
     }
 }
