@@ -31,8 +31,7 @@ public class Main {
     }
 
     public static double averageOfArray(int[] array, int daysPerMounth) {
-        double result = 0.0;
-        return result = (double)sumOfArray(array) / daysPerMounth;
+        return (double)sumOfArray(array) / daysPerMounth;
     }
 
     static void task1() {
