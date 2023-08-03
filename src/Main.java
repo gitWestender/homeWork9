@@ -31,8 +31,8 @@ public class Main {
         return result;
     }
 
-    public static double averageOfArray(int[] array, int daysPerMounth) {
-        return (double) sumOfArray(array) / daysPerMounth;
+    public static double averageOfArray(int[] array) {
+        return (double) sumOfArray(array) / array.lenght;
     }
 
     static void task1() {
@@ -64,7 +64,7 @@ public class Main {
 
         int[] book = generateRandomArray(30);
 
-        System.out.printf("\nСредняя сумма трат за месяц составила %f рублей\n", averageOfArray(book, 30));
+        System.out.printf("\nСредняя сумма трат за месяц составила %f рублей\n", averageOfArray(book));
     }
 
     static void task4() {
